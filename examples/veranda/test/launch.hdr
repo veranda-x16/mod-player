@@ -1,0 +1,9 @@
+# the player's gate: opens Mods/DIZZYCRS.MOD with it, as the shell would
+name        = Launch
+class       = Launch
+version     = 1.0
+author      = x16-mod
+description = Starts the MOD Player with a document.
+mode        = 640x480
+api         = 2
+icon        = ../trace.pbm

@@ -1,0 +1,17 @@
+# Chunk-decision hashes: see tests/run_chunk.py.
+# Regenerate deliberately (--update), never to make a red test green.
+#
+# Regenerated once when the playlist began sizing itself to the machine: that
+# moved the bank sample data starts at, which changed every absolute bank
+# number without altering a single output sample, and the gate reported all
+# seven modules as regressions. Before regenerating, a build pinned to the old
+# base was checked against the old values and reproduced them exactly, proving
+# the audio was untouched; the hash now folds the bank RELATIVE to that base,
+# so a future layout change cannot raise the same false alarm.
+tests/mods/sampleloop.mod | 00001786 869c5e11
+tests/mods/fourvoice.mod | 00001770 7e8aea3b
+tests/mods/real/Checknob.mod | 00001774 9c33df3a
+tests/mods/real/JESTER - Stardust Memories.mod | 0000177f 1bbff9ea
+tests/mods/real/JOGEIR LILJEDAHL - G-Comp.mod | 00001788 b6f0a654
+modp/Cracktro/DIZZYCRS.MOD | 00001778 f6c109a2
+modp/Demos/Mod.kaffe Og Kage.mod | 0000177a 747517bb
